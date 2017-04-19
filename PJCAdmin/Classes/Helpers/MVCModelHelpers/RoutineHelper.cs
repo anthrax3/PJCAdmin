@@ -690,7 +690,7 @@ namespace PJCAdmin.Classes.Helpers.MVCModelHelpers
          * @param model: The model to use for updating
          * the existing routine.
          */
-        private void modifyExistingRoutine(string creatorUsername, string routineName, RoutineModel model)
+        public void modifyExistingRoutine(string creatorUsername, string routineName, RoutineModel model)
         {
             Routine r = getMostRecentRoutineAssignedToByName(creatorUsername, routineName, model.assigneeUserName);
 
